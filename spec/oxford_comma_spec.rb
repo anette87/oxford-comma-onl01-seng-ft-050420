@@ -14,3 +14,7 @@ describe "#oxford_comma" do
   end
 end
 
+def oxford_comma(["kiwi"])
+  (["kiwi"]).join
+end 
+
