@@ -22,8 +22,8 @@ def oxford_comma(arr)
   arr[-2] << " and "
   arr.join
   elsif arr.length > 2
-    arr[-1].prepend "and"
-	arr.join(", ")
+    arr[-1].prepend "and "
+	  arr.join(", ")
 	else 
 	  arr.join
   end
