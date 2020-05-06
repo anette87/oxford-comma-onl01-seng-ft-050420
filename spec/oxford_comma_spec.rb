@@ -18,9 +18,9 @@ end
  def oxford_comma(arr)
   if arr.length >= 2
   arr[-1].prepend "and"
-  array.join(" , ")
+  arr.join(" , ")
 	else 
-	  array.join
+	  arr.join
   end
 end
 
