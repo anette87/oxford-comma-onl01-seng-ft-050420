@@ -15,23 +15,16 @@ describe "#oxford_comma" do
 end
 
 
- def oxford_comma(arr)
-  if arr.length >= 2
-  arr[-1].prepend "and"
-  arr.join(" , ")
+
+
+def oxford_comma(arr)
+  if arr.length == 2
+  arr[-2] << " and "
+  array.join
+  elsif array.length > 2
+    array[-1].prepend "and "
+	array.join(", ")
 	else 
-	  arr.join
+	  array.join
   end
 end
-
-# def oxford_comma(arr)
-#   if arr.length == 2
-#   arr[-2] << " and "
-#   array.join
-#   elsif array.length > 2
-#     array[-1].prepend "and "
-# 	array.join(", ")
-# 	else 
-# 	  array.join
-#   end
-# end
