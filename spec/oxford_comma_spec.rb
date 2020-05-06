@@ -14,14 +14,15 @@ describe "#oxford_comma" do
   end
 end
 
- def oxford_comma(arr)
-   arr.join
-   arr.join(" and ")
-    if arr.length == 2
-    arr[-2] << " and "
-    array.join
-  end 
-  
-end 
 
- 
+ def oxford_comma(array)
+  if array.length == 2
+  array[-2] << " and "
+  array.join
+  elsif array.length > 2
+    array[-1].prepend "and "
+	array.join(", ")
+	else 
+	  array.join
+  end
+end
