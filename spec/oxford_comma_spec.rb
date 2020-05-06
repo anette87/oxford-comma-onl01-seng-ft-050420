@@ -27,6 +27,5 @@ def oxford_comma(arr)
 	else 
 	  arr.join
   end
-  puts arr.length 
 end
 
