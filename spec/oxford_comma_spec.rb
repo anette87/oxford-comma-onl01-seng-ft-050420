@@ -15,9 +15,9 @@ describe "#oxford_comma" do
 end
 
 
- def oxford_comma(array)
-  if array.length == 2
-  array[-2] << " and "
+ def oxford_comma(arr)
+  if arr.length == 2
+  arr[-2] << " and "
   array.join
   elsif array.length > 2
     array[-1].prepend "and "
