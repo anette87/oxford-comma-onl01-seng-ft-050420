@@ -18,7 +18,7 @@ end
 
 
 def oxford_comma(arr)
-  if arr.length == 1
+  if arr.length == 2
   arr[-2] << " and "
   arr.join
   elsif arr.length > 2
