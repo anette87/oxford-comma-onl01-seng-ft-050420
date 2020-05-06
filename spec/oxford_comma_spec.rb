@@ -13,3 +13,19 @@ describe "#oxford_comma" do
     expect(oxford_comma(["kiwi", "durian", "starfruit", "mangos", "dragon fruits", "lychees", "pomelos"])).to eq("kiwi, durian, starfruit, mangos, dragon fruits, lychees, and pomelos")
   end
 end
+
+
+
+
+def oxford_comma(arr)
+  if arr.length == 2
+  arr[-2] << " and "
+  arr.join
+  elsif arr.length > 2
+    arr[-1].prepend "and "
+	  arr.join(", ")
+	else 
+	  arr.join
+  end
+end
+
