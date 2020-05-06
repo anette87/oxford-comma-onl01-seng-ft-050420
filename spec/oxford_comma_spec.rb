@@ -15,5 +15,5 @@ describe "#oxford_comma" do
 end
 
 def oxford_comma(["kiwi"])
-  oxford_comma.join
+  ["kiwi"].join
 end 
