@@ -17,6 +17,6 @@ end
 def oxford_comma(arr)
   arr.join
   arr.join(" and ")
-  arr.join( " , ")
+  
 end 
 
